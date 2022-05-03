@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>Support</title>
+  <style>
+    html {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background: #F0EFF4;
+    }
+
+    button {
+      overflow: visible;
+    }
+
+    button {
+      text-transform: none;
+    }
+
+    button,
+    input {
+      color: #1E1E24;
+      font: inherit;
+      margin: 0;
+    }
+
+    input {
+      line-height: normal;
+    }
+
+    #container {
+      border: solid 3px #1E1E24;
+      max-width: 768px;
+      margin: 60px auto;
+      position: relative;
+    }
+
+    form {
+      padding: 30.5px;
+      margin: 10px 0;
+    }
+
+    h1 {
+      color: #1E1E24;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 7px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .underline {
+      border-bottom: solid 2px #1E1E24;
+      margin: -0.512em auto;
+      width: 80px;
+    }
+
+    .icon_wrapper {
+      margin: 35px auto 0;
+      width: 100%;
+    }
+
+    .icon {
+      display: block;
+      fill: #1E1E24;
+      height: 40px;
+      margin: 0 auto;
+      width: 40px;
+    }
+
+    .email {
+      float: left;
+      width: 45%;
+    }
+
+    input[type='text'],
+    [type='email'] {
+      background: none;
+      border: none;
+      border-bottom: solid 2px #1E1E24;
+      color: #1E1E24;
+      font-size: 1.000em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    input[type='text']:focus,
+    [type='email']:focus {
+      outline: none;
+      padding: 0 0 0.875em 0;
+    }
+
+    .message {
+      float: right;
+      width: 45%;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #1E1E24;
+    }
+
+    :-moz-placeholder {
+      color: #1E1E24;
+      opacity: 1;
+    }
+
+    ::-moz-placeholder {
+      color: #1E1E24;
+      opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+      color: #1E1E24;
+    }
+
+    #form_button {
+      background: none;
+      border: solid 2px #1E1E24;
+      color: #1E1E24;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Helvetica', Arial, sans-serif;
+      font-size: 0.875em;
+      font-weight: bold;
+      outline: none;
+      padding: 20px 35px;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    #form_button:hover {
+      background: #1E1E24;
+      color: #F2F3EB;
+    }
+
+    @media screen and (max-width: 768px) {
+      #container {
+        margin: 20px auto;
+        width: 95%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .underline {
+        width: 68px;
+      }
+
+      #form_button {
+        padding: 15px 25px;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      h1 {
+        font-size: 18px;
+      }
+
+      .icon {
+        height: 30px;
+        width: 30px;
+      }
+
+      .underline {
+        width: 53px;
+      }
+
+      input[type='text'],
+      [type='email'] {
+        font-size: 0.875em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>contact us</h1>
+    <div class="underline">
+    </div>
+    <div class="icon_wrapper">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Mail</title><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+    </div>
+
+    <form action="https://formspree.io/f/xjvlpzka" method="POST">
+      <div class="email">
+        <label for="name"></label>
+        <input type="email" placeholder="e-mail" name="email" required>
+      </div>
+
+      <div class="message">
+        <label for="message"></label>
+        <input type="text" placeholder="message" name="message" required>
+      </div>
+
+      <!-- your other form fields go here -->
+      <div class="submit">
+        <input type="submit" value="Send Message" id="form_button" />
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
